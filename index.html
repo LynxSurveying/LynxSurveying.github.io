@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lynx Land Surveying</title>
 <style>
   body {
     background-color: #000000;
     background-image: url('Warshington.jpg');
-    background-repeat: repeat; 
+    background-repeat: no-repeat; 
     background-attachment: fixed; 
+    background-position: center;
+    background-size: cover;
     color: #00FF00;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
@@ -16,7 +19,7 @@
     margin: 0 auto;
     border: 3px ridge #808080;
     width: 70%;
-    background-color: #111111;
+    background-color: rgba(17, 17, 17, 0.85);
   }
   th {
     background-color: #000080;
@@ -58,8 +61,11 @@
     max-width: 40%;
     height: auto;
   }
-  /* Stacks the photos on top of each other if viewed on a narrow phone screen */
+  /* Stacks the photos on top of each other and widens table on phones */
   @media (max-width: 600px) {
+    table {
+      width: 95%;
+    }
     .field-photo {
       max-width: 80%;
     }
@@ -95,7 +101,10 @@
       <p>Professional Land Surveyor serving the Wenatchee Valley.</p>
       
       <center>
-        <img src="Me.jpg" alt="Wyatt Brown operating equipment" class="field-photo">
+        <!-- Wrapped your photo in the secret FPV link we discussed -->
+        <a href="fpv.html">
+          <img src="Me.jpg" alt="Wyatt Brown operating equipment" class="field-photo">
+        </a>
         <img src="Leica.jpg" alt="Surveying Total Station" class="field-photo">
       </center>
       
